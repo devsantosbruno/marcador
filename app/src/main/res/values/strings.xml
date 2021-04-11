@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">marcador futebol</string>
+    <string name="app_name">Marcador futebol</string>
+    <string name="nome">Nome do time</string>
+    <string name="gol">GOL</string>
+    <string name="penalti">PENALTI</string>
+    <string name="escanteio">ESCANTEIO</string>
+    <string name="falta">FALTA</string>
+    <string name="amarelo">CARTÃO AMARELO</string>
+    <string name="vermelho">CARTÃO VERMELHO</string>
+    <string name="resetar">RESETAR</string>
 </resources>

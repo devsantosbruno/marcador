@@ -13,13 +13,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
+        <EditText
             android:id="@+id/timeA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:text="TIME A"
-            android:textSize="30sp" />
+            android:hint="@string/nome"
+            android:inputType="textCapWords"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/golA"
@@ -29,7 +30,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginTop="5dp"
             android:onClick="golA"
-            android:text="GOL"
+            android:text="@string/gol"
             android:textSize="15sp" />
 
         <TextView
@@ -50,7 +51,7 @@
             android:layout_below="@id/golA"
             android:layout_alignParentLeft="true"
             android:onClick="penaltiA"
-            android:text="PENALTI"
+            android:text="@string/penalti"
             android:textSize="15sp" />
 
         <TextView
@@ -71,7 +72,7 @@
             android:layout_below="@id/penaltiA"
             android:layout_alignParentLeft="true"
             android:onClick="escanteioA"
-            android:text="ESCANTEIO"
+            android:text="@string/escanteio"
             android:textSize="15sp" />
 
         <TextView
@@ -92,7 +93,7 @@
             android:layout_below="@id/escanteioA"
             android:layout_alignParentLeft="true"
             android:onClick="faltaA"
-            android:text="FALTA"
+            android:text="@string/falta"
             android:textSize="15sp" />
 
         <TextView
@@ -113,7 +114,7 @@
             android:layout_below="@id/faltaA"
             android:layout_alignParentLeft="true"
             android:onClick="amareloA"
-            android:text="CARTÃO AMARELO"
+            android:text="@string/amarelo"
             android:textSize="15sp" />
 
         <TextView
@@ -134,7 +135,7 @@
             android:layout_below="@id/amareloA"
             android:layout_alignParentLeft="true"
             android:onClick="vermelhoA"
-            android:text="CARTÃO VERMELHO"
+            android:text="@string/vermelho"
             android:textSize="15sp" />
 
         <TextView
@@ -152,25 +153,35 @@
     <View
         android:layout_width="1dp"
         android:layout_height="match_parent"
-        android:layout_above="@id/resetar"
+        android:layout_above="@id/reset"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/darkerGrey" />
 
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetar"
+        android:text="@string/resetar"
+        android:textSize="15sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
+        <EditText
             android:id="@+id/timeB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="TIME B"
-            android:textSize="30sp" />
+            android:hint="@string/nome"
+            android:inputType="textCapWords"
+            android:textSize="20sp"/>
 
         <Button
             android:id="@+id/golB"
@@ -180,7 +191,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="5dp"
             android:onClick="golB"
-            android:text="GOL"
+            android:text="@string/gol"
             android:textSize="15sp" />
 
         <TextView
@@ -201,7 +212,7 @@
             android:layout_below="@id/golB"
             android:layout_alignParentRight="true"
             android:onClick="penaltiB"
-            android:text="PENALTI"
+            android:text="@string/penalti"
             android:textSize="15sp" />
 
         <TextView
@@ -222,7 +233,7 @@
             android:layout_below="@id/penaltiB"
             android:layout_alignParentRight="true"
             android:onClick="escanteioB"
-            android:text="ESCANTEIO"
+            android:text="@string/escanteio"
             android:textSize="15sp" />
 
         <TextView
@@ -243,7 +254,7 @@
             android:layout_below="@id/escanteioB"
             android:layout_alignParentRight="true"
             android:onClick="faltaB"
-            android:text="FALTA"
+            android:text="@string/falta"
             android:textSize="15sp" />
 
         <TextView
@@ -264,7 +275,7 @@
             android:layout_below="@id/faltaB"
             android:layout_alignParentRight="true"
             android:onClick="amareloB"
-            android:text="CARTÃO AMARELO"
+            android:text="@string/amarelo"
             android:textSize="15sp" />
 
         <TextView
@@ -285,7 +296,7 @@
             android:layout_below="@id/amareloB"
             android:layout_alignParentRight="true"
             android:onClick="vermelhoB"
-            android:text="CARTÃO VERMELHO"
+            android:text="@string/vermelho"
             android:textSize="15sp" />
 
         <TextView
@@ -299,14 +310,4 @@
             android:text="0"
             android:textSize="33sp" />
     </RelativeLayout>
-
-    <Button
-        android:id="@+id/resetar"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="resetar"
-        android:text="RESETAR"
-        android:textSize="15sp" />
 </RelativeLayout>

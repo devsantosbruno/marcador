@@ -1,7 +1,6 @@
 package com.example.marcadorfutebol;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -60,37 +59,6 @@ public class MainActivity extends AppCompatActivity {
         displayVermelhoA(valorVermelhoA);
     }
 
-    //Mostrar cada valor de A para o usuário.
-    public void displayGolA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.valorGolA);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    public void displayPenaltiA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.valorPenaltiA);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    public void displayEscanteioA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.valorEscanteioA);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    public void displayFaltaA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.valorFaltaA);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    public void displayAmareloA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.valorAmareloA);
-        scoreView.setText(String.valueOf(score));
-    }
-
-    public void displayVermelhoA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.valorVermelhoA);
-        scoreView.setText(String.valueOf(score));
-    }
-
     //Configurações para time B.
     public void golB(View v) {
         valorGolB = valorGolB + 1;
@@ -122,6 +90,64 @@ public class MainActivity extends AppCompatActivity {
         displayVermelhoB(valorVermelhoB);
     }
 
+    //Criando função para resetar os valores.
+    public void resetar(View v) {
+        valorGolA = 0;
+        valorPenaltiA = 0;
+        valorEscanteioA = 0;
+        valorFaltaA = 0;
+        valorAmareloA = 0;
+        valorVermelhoA = 0;
+        valorGolB = 0;
+        valorPenaltiB = 0;
+        valorEscanteioB = 0;
+        valorFaltaB = 0;
+        valorAmareloB = 0;
+        valorVermelhoB = 0;
+        displayGolA(valorGolA);
+        displayPenaltiA(valorPenaltiA);
+        displayEscanteioA(valorEscanteioA);
+        displayFaltaA(valorFaltaA);
+        displayAmareloA(valorAmareloA);
+        displayVermelhoA(valorVermelhoA);
+        displayGolB(valorGolB);
+        displayPenaltiB(valorPenaltiB);
+        displayEscanteioB(valorEscanteioB);
+        displayFaltaB(valorFaltaB);
+        displayAmareloB(valorAmareloB);
+        displayVermelhoB(valorVermelhoB);
+    }
+
+    //Mostrar cada valor de A para o usuário.
+    public void displayGolA(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.valorGolA);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void displayPenaltiA(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.valorPenaltiA);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void displayEscanteioA(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.valorEscanteioA);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void displayFaltaA(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.valorFaltaA);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void displayAmareloA(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.valorAmareloA);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void displayVermelhoA(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.valorVermelhoA);
+        scoreView.setText(String.valueOf(score));
+    }
 
     //Mostrar cada valor de B para o usuário.
     public void displayGolB(int score) {
@@ -152,33 +178,5 @@ public class MainActivity extends AppCompatActivity {
     public void displayVermelhoB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.valorVermelhoB);
         scoreView.setText(String.valueOf(score));
-    }
-
-    //Criando função para resetar os valores.
-    public void resetar(View v) {
-        int valorGolA = 0;
-        int valorPenaltiA = 0;
-        int valorEscanteioA = 0;
-        int valorFaltaA = 0;
-        int valorAmareloA = 0;
-        int valorVermelhoA = 0;
-        int valorGolB = 0;
-        int valorPenaltiB = 0;
-        int valorEscanteioB = 0;
-        int valorFaltaB = 0;
-        int valorAmareloB = 0;
-        int valorVermelhoB = 0;
-        displayGolA(valorGolA);
-        displayPenaltiA(valorPenaltiA);
-        displayEscanteioA(valorEscanteioA);
-        displayFaltaA(valorFaltaA);
-        displayAmareloA(valorAmareloA);
-        displayVermelhoA(valorVermelhoA);
-        displayGolB(valorGolB);
-        displayPenaltiB(valorPenaltiB);
-        displayEscanteioB(valorEscanteioB);
-        displayFaltaB(valorFaltaB);
-        displayAmareloB(valorAmareloB);
-        displayVermelhoB(valorVermelhoB);
     }
 }
