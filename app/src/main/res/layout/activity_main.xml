@@ -1,313 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:orientation="horizontal"
-    android:padding="12dp"
-    tools:context=".MainActivity">
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.example.scorer.MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <TextView
+        android:id="@+id/soccer"
+        style="@style/CategoryStyle"
+        android:background="@color/category_soccer"
+        android:text="@string/category_soccer" />
 
-        <EditText
-            android:id="@+id/timeA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:hint="@string/nome"
-            android:inputType="textCapWords"
-            android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/basketball"
+        style="@style/CategoryStyle"
+        android:background="@color/category_basketball"
+        android:text="@string/category_basketball" />
 
-        <Button
-            android:id="@+id/golA"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/timeA"
-            android:layout_alignParentLeft="true"
-            android:layout_marginTop="5dp"
-            android:onClick="golA"
-            android:text="@string/gol"
-            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/volleyball"
+        style="@style/CategoryStyle"
+        android:background="@color/category_volleyball"
+        android:text="@string/category_volleyball" />
 
-        <TextView
-            android:id="@+id/valorGolA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/timeA"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/golA"
-            android:text="0"
-            android:textSize="33sp" />
+    <TextView
+        android:id="@+id/tennis"
+        style="@style/CategoryStyle"
+        android:background="@color/category_tennis"
+        android:text="@string/category_tennis" />
 
-        <Button
-            android:id="@+id/penaltiA"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/golA"
-            android:layout_alignParentLeft="true"
-            android:onClick="penaltiA"
-            android:text="@string/penalti"
-            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/tableTennis"
+        style="@style/CategoryStyle"
+        android:background="@color/category_tableTennis"
+        android:text="@string/category_tableTennis" />
 
-        <TextView
-            android:id="@+id/valorPenaltiA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/golA"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/penaltiA"
-            android:text="0"
-            android:textSize="33sp" />
-
-        <Button
-            android:id="@+id/escanteioA"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/penaltiA"
-            android:layout_alignParentLeft="true"
-            android:onClick="escanteioA"
-            android:text="@string/escanteio"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/valorEscanteioA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/penaltiA"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/escanteioA"
-            android:text="0"
-            android:textSize="33sp" />
-
-        <Button
-            android:id="@+id/faltaA"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/escanteioA"
-            android:layout_alignParentLeft="true"
-            android:onClick="faltaA"
-            android:text="@string/falta"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/valorFaltaA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/escanteioA"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/faltaA"
-            android:text="0"
-            android:textSize="33sp" />
-
-        <Button
-            android:id="@+id/amareloA"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/faltaA"
-            android:layout_alignParentLeft="true"
-            android:onClick="amareloA"
-            android:text="@string/amarelo"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/valorAmareloA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/faltaA"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/amareloA"
-            android:text="0"
-            android:textSize="33sp" />
-
-        <Button
-            android:id="@+id/vermelhoA"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/amareloA"
-            android:layout_alignParentLeft="true"
-            android:onClick="vermelhoA"
-            android:text="@string/vermelho"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/valorVermelhoA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/amareloA"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/vermelhoA"
-            android:text="0"
-            android:textSize="33sp" />
-    </RelativeLayout>
-
-    <View
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:layout_above="@id/reset"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/darkerGrey" />
-
-    <Button
-        android:id="@+id/reset"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="resetar"
-        android:text="@string/resetar"
-        android:textSize="15sp" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/timeB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:hint="@string/nome"
-            android:inputType="textCapWords"
-            android:textSize="20sp"/>
-
-        <Button
-            android:id="@+id/golB"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/timeB"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="5dp"
-            android:onClick="golB"
-            android:text="@string/gol"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/valorGolB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/timeB"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@id/golB"
-            android:text="0"
-            android:textSize="33sp" />
-
-        <Button
-            android:id="@+id/penaltiB"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/golB"
-            android:layout_alignParentRight="true"
-            android:onClick="penaltiB"
-            android:text="@string/penalti"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/valorPenaltiB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/golB"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@id/penaltiB"
-            android:text="0"
-            android:textSize="33sp" />
-
-        <Button
-            android:id="@+id/escanteioB"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/penaltiB"
-            android:layout_alignParentRight="true"
-            android:onClick="escanteioB"
-            android:text="@string/escanteio"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/valorEscanteioB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/penaltiB"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@id/escanteioB"
-            android:text="0"
-            android:textSize="33sp" />
-
-        <Button
-            android:id="@+id/faltaB"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/escanteioB"
-            android:layout_alignParentRight="true"
-            android:onClick="faltaB"
-            android:text="@string/falta"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/valorFaltaB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/escanteioB"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@id/faltaB"
-            android:text="0"
-            android:textSize="33sp" />
-
-        <Button
-            android:id="@+id/amareloB"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/faltaB"
-            android:layout_alignParentRight="true"
-            android:onClick="amareloB"
-            android:text="@string/amarelo"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/valorAmareloB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/faltaB"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@id/amareloB"
-            android:text="0"
-            android:textSize="33sp" />
-
-        <Button
-            android:id="@+id/vermelhoB"
-            android:layout_width="130dp"
-            android:layout_height="60dp"
-            android:layout_below="@id/amareloB"
-            android:layout_alignParentRight="true"
-            android:onClick="vermelhoB"
-            android:text="@string/vermelho"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/valorVermelhoB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/amareloB"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@id/vermelhoB"
-            android:text="0"
-            android:textSize="33sp" />
-    </RelativeLayout>
-</RelativeLayout>
+</LinearLayout>

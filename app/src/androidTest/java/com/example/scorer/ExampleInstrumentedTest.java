@@ -1,4 +1,4 @@
-package com.example.marcadorfutebol;
+package com.example.scorer;
 
 import android.content.Context;
 

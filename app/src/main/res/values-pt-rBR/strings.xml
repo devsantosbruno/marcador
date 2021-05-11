@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Marcador</string>
+    <string name="team_name">NOME DO TIME</string>
+    <string name="goal">GOL</string>
+    <string name="penalty">PÊNALTI</string>
+    <string name="corner_kick">ESCANTEIOS</string>
+    <string name="yellow_card">CARTÃO AMARELO</string>
+    <string name="red_card">CARTÃO VERMELHO</string>
+    <string name="reset">RESETAR</string>
+    <string name="category_soccer">FUTEBOL</string>
+    <string name="threePoints">3 PONTOS</string>
+    <string name="twoPoints">2 PONTOS</string>
+    <string name="onePoint">1 PONTO</string>
+    <string name="category_basketball">BASQUETE</string>
+    <string name="category_volleyball">" VÔLEI"</string>
+    <string name="category_tennis">TÊNIS</string>
+    <string name="freeThrow">ARREMESSO LIVRE</string>
+    <string name="category_tableTennis">TÊNIS DE MESA</string>
+    <string name="obstruction">OBSTRUÇÃO</string>
+    <string name="point">PONTO</string>
+    <string name="lack">FALTA</string>
+    <string name="doubleFouls">DUPLAS FALTAS</string>
+    <string name="warning">ADVERTÊNCIA</string>
+</resources>

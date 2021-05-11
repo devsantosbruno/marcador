@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.scorer.TennisActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/teamA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:hint="@string/team_name"
+            android:inputType="textCapWords"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/setsA"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/teamA"
+            android:layout_marginTop="5dp"
+            android:onClick="setsA"
+            android:text="@string/sets"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/setsValueA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teamA"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/setsA"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/gamesA"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/setsA"
+            android:layout_marginTop="5dp"
+            android:onClick="gamesA"
+            android:text="@string/games"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gamesValueA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setsA"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/gamesA"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/pointsA"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/gamesA"
+            android:layout_marginTop="5dp"
+            android:onClick="pointsA"
+            android:text="@string/point"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pointsValueA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gamesA"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/pointsA"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/foulsA"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/pointsA"
+            android:layout_marginTop="5dp"
+            android:onClick="foulsA"
+            android:text="@string/lack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/foulsValueA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pointsA"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/foulsA"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/warningsA"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/foulsA"
+            android:layout_marginTop="5dp"
+            android:onClick="warningsA"
+            android:text="@string/warning"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/warningsValueA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foulsA"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/doubleFaultA"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/doubleFaultA"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/warningsA"
+            android:layout_marginTop="5dp"
+            android:onClick="doubleFaultA"
+            android:text="@string/doubleFouls"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/doubleValueA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warningsA"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/doubleFaultA"
+            android:text="0"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/category_soccer" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="reset"
+        android:text="@string/reset"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/teamB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="@string/team_name"
+            android:inputType="textCapWords"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/setsB"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/teamB"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:onClick="setsB"
+            android:text="@string/sets"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/setsValueB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teamB"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/setsB"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/gamesB"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/setsB"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:onClick="gamesB"
+            android:text="@string/games"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/gamesValueB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setsB"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/gamesB"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/pointsB"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/gamesB"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:onClick="pointsB"
+            android:text="@string/point"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pointsValueB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gamesB"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/pointsB"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/foulsB"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/pointsB"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:onClick="foulsB"
+            android:text="@string/lack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/foulsValueB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pointsB"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/foulsB"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/warningsB"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/foulsB"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:onClick="warningsB"
+            android:text="@string/warning"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/warningsValueB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foulsB"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/doubleFaultB"
+            android:text="0"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/doubleFaultB"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/warningsB"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:onClick="doubleFaultB"
+            android:text="@string/doubleFouls"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/doubleValueB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warningsB"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/doubleFaultB"
+            android:text="0"
+            android:textSize="35sp" />
+    </RelativeLayout>
+</RelativeLayout>

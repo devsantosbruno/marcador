@@ -1,11 +1,38 @@
 <resources>
-    <string name="app_name">Marcador futebol</string>
-    <string name="nome">Nome do time</string>
-    <string name="gol">GOL</string>
-    <string name="penalti">PENALTI</string>
-    <string name="escanteio">ESCANTEIO</string>
-    <string name="falta">FALTA</string>
-    <string name="amarelo">CARTÃO AMARELO</string>
-    <string name="vermelho">CARTÃO VERMELHO</string>
-    <string name="resetar">RESETAR</string>
+    <!-- GERAL -->
+    <string name="app_name">Scorer</string>
+    <string name="team_name">TEAM NAME</string>
+    <string name="sets" translatable="false">SETS</string>
+    <string name="point">POINT</string>
+    <string name="lack">LACK</string>
+    <!-- GERAL -->
+    <!-- FUTEBOL -->
+    <string name="goal">GOAL</string>
+    <string name="penalty">PENALTY</string>
+    <string name="corner_kick">CORNER KICK</string>
+    <string name="yellow_card">YELLOW CARD</string>
+    <string name="red_card">RED CARD</string>
+    <string name="reset">RESET</string>
+    <string name="category_soccer">SOCCER</string>
+    <!-- FUTEBOL -->
+    <!-- BASQUETE -->
+    <string name="threePoints">3 POINTS</string>
+    <string name="twoPoints">2 POINTS</string>
+    <string name="onePoint">1 POINT</string>
+    <string name="freeThrow">FREE THROW</string>
+    <string name="category_basketball">BASKETBALL</string>
+    <!-- BASQUETE -->
+    <!-- VOLEI -->
+    <string name="category_volleyball">VOLLEYBALL</string>
+    <!-- VOLEI -->
+    <!-- TENIS -->
+    <string name="category_tennis">TENNIS</string>
+    <string name="games" translatable="false">GAMES</string>
+    <string name="doubleFouls">DOUBLE FOULS</string>
+    <string name="warning">WARNING</string>
+    <!-- TENIS -->
+    <!-- TENIS DE MESA -->
+    <string name="category_tableTennis">TABLE TENNIS</string>
+    <string name="obstruction">OBSTRUCTION</string>
+    <!-- TENIS DE MESA -->
 </resources>
