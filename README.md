@@ -1,2 +1,2 @@
 # marcadorFutebol
-Um simples aplicativo de aprendizagem, com o intuito a criar um placar com todas estatísticas.
+Mais um simples aplicativo de aprendizagem, com o intuito de criar placares de diferentes esportes com suas estatísticas. Botando em prática também às cores e algumas navigations.
